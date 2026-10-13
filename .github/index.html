@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CREO | Social growth for creative talent</title>
+    <style>
+      :root {
+        --bg: #07130f;
+        --panel: #102720;
+        --line: rgba(255,255,255,0.12);
+        --text: #edf7f2;
+        --muted: #bfe2d4;
+        --accent: #61e6a8;
+        --accent-2: #9ae6ff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(180deg, #07130f 0%, #0d1f1a 100%);
+        color: var(--text);
+      }
+      .wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 60px 20px 80px;
+      }
+      .brand {
+        display: inline-block;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent);
+        font-size: 0.8rem;
+        margin-bottom: 12px;
+      }
+      h1 {
+        font-size: clamp(2.5rem, 6vw, 5rem);
+        line-height: 1.05;
+        margin: 0 0 18px;
+      }
+      p {
+        color: var(--muted);
+        font-size: 1.15rem;
+        line-height: 1.7;
+        max-width: 700px;
+      }
+      .cta-row {
+        margin-top: 24px;
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .button {
+        display: inline-block;
+        text-decoration: none;
+        padding: 14px 22px;
+        border-radius: 12px;
+        font-weight: 700;
+        border: 1px solid var(--line);
+      }
+      .button.primary {
+        background: var(--accent);
+        color: #052611;
+      }
+      .button.secondary {
+        background: transparent;
+        color: var(--text);
+      }
+      .grid {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 18px;
+      }
+      .card {
+        background: rgba(16, 39, 32, 0.8);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 20px;
+      }
+      .card h3 {
+        margin-top: 0;
+        font-size: 1.1rem;
+      }
+      .card p {
+        margin-bottom: 0;
+        font-size: 0.98rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="brand">CREO</div>
+      <h1>Built for brands and creatives.</h1>
+      <p>
+        CREO helps ambitious creators and brands discover opportunity, build momentum, and make smarter
+        decisions with trusted social performance data.
+      </p>
+
+      <div class="cta-row">
+        <a class="button primary" href="privacy.html">View Privacy Policy</a>
+        <a class="button secondary" href="mailto:hello@creo.app">Contact</a>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Verified metrics</h3>
+          <p>Surface real performance indicators from connected platform data.</p>
+        </div>
+        <div class="card">
+          <h3>Creator discovery</h3>
+          <p>Connect brands with vetted creatives who match the right brief.</p>
+        </div>
+        <div class="card">
+          <h3>Opportunity flow</h3>
+          <p>Move from match to conversation to delivery with less friction.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
